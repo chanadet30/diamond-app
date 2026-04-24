@@ -52,6 +52,10 @@ export default function Home() {
           Accès Privé aux Diamants d’Investissement 💎
         </h1>
 
+        <p style={{ fontSize:"12px", color:"#777", marginTop:"10px" }}>
+          Investisseurs privés • Dirigeants • Family offices
+        </p>
+
         <p style={{ color: "#aaa", marginTop: "10px" }}>
           Réservé à une clientèle sélectionnée
         </p>
@@ -59,6 +63,15 @@ export default function Home() {
         <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "600px", marginInline: "auto" }}>
           Accès à des diamants Lotus à 105 facettes, exclusivité mondiale,
           ainsi qu’à des pièces d’investissement introuvables sur le marché public.
+        </p>
+
+        {/* PREUVE */}
+        <p style={{
+          marginTop:"20px",
+          fontSize:"12px",
+          color:"#777"
+        }}>
+          Pierres certifiées GIA / HRD – réseau international – sélection professionnelle
         </p>
       </div>
 
@@ -69,7 +82,8 @@ export default function Home() {
         padding: "50px",
         maxWidth: "520px",
         margin: "80px auto",
-        borderRadius: "16px"
+        borderRadius: "16px",
+        border: "1px solid #e5e5e5"
       }}>
 
         {step === 1 && (
@@ -136,21 +150,31 @@ export default function Home() {
               onClick={submit}>
               Demander un accès
             </button>
+
+            {/* RARETÉ */}
+            <p style={{
+              fontSize:"12px",
+              color:"#666",
+              marginTop:"10px",
+              textAlign:"center"
+            }}>
+              Nombre de demandes limité chaque semaine
+            </p>
           </>
         )}
 
         {step === 5 && (
           <div style={{ textAlign: "center" }}>
-            <h2>Analyse en cours</h2>
+            <h2>Validation du profil en cours</h2>
+
+            <p style={{ marginTop: "10px", fontSize:"13px", color:"#666" }}>
+              Vous serez contacté uniquement si votre profil correspond aux critères d’accès.
+            </p>
 
             {form.budget === '1M+' ? (
               <>
                 <p style={{ marginTop: "10px" }}>
-                  Vous êtes éligible à un accès prioritaire à nos pièces les plus rares.
-                </p>
-
-                <p style={{ marginTop: "10px", fontSize: "13px", color: "#666" }}>
-                  Certaines opportunités ne sont présentées qu’à un cercle restreint d’investisseurs.
+                  Accès prioritaire aux pièces les plus rares.
                 </p>
 
                 <a href="https://wa.me/33782061181?text=Client%201M%20VIP"
@@ -189,7 +213,7 @@ export default function Home() {
 
       </div>
 
-      {/* STORY + PRÉ-CLOSING */}
+      {/* STORYTELLING */}
       <div style={{
         textAlign: "center",
         color: "#aaa",
