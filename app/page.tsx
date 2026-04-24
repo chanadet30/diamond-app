@@ -69,9 +69,22 @@ export default function Home() {
         }}>
           Sélection confidentielle réservée à une clientèle exigeante
         </p>
+
+        {/* LOTUS */}
+        <p style={{
+          marginTop: "20px",
+          fontSize: "14px",
+          color: "#bbb",
+          maxWidth: "600px",
+          marginLeft: "auto",
+          marginRight: "auto"
+        }}>
+          Accès à une sélection incluant des diamants Lotus à 105 facettes,
+          pièces rares réservées à une clientèle privée.
+        </p>
       </div>
 
-      {/* CARD */}
+      {/* FORM CARD */}
       <div style={{
         background: "rgba(255,255,255,0.95)",
         color: "black",
@@ -80,7 +93,6 @@ export default function Home() {
         margin: "80px auto",
         borderRadius: "16px",
         boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
-        backdropFilter: "blur(10px)",
         animation: "fadeInUp 1s ease"
       }}>
 
@@ -185,6 +197,22 @@ export default function Home() {
           </div>
         )}
 
+      </div>
+
+      {/* STORYTELLING */}
+      <div style={{
+        marginTop: "60px",
+        textAlign: "center",
+        fontSize: "14px",
+        color: "#aaa",
+        maxWidth: "700px",
+        marginLeft: "auto",
+        marginRight: "auto",
+        lineHeight: "1.6"
+      }}>
+        <p>Les diamants d’investissement ne sont pas accessibles au grand public.</p>
+        <p>Chaque pierre est sélectionnée selon des critères stricts : pureté, rareté et liquidité internationale.</p>
+        <p>Notre réseau permet un accès privilégié à des opportunités réservées aux professionnels du marché.</p>
       </div>
 
       {/* ANIMATIONS */}
