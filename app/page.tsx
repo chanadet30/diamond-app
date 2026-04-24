@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main style={{ padding: 40 }}>
-      <h1>VERSION TEST</h1>
+      <h1>VERSION OK</h1>
 
       {step === 1 && (
         <button onClick={() => setStep(2)}>
