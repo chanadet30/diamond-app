@@ -34,8 +34,7 @@ export default function Home() {
     background: "white",
     cursor: "pointer",
     fontSize: "15px",
-    letterSpacing: "1px",
-    transition: "all 0.3s ease"
+    letterSpacing: "1px"
   };
 
   return (
@@ -48,52 +47,29 @@ export default function Home() {
     }}>
 
       {/* HEADER */}
-      <div style={{
-        textAlign: "center",
-        opacity: 0,
-        animation: "fadeIn 1.2s ease forwards"
-      }}>
-        <h1 style={{
-          fontSize: "42px",
-          letterSpacing: "2px",
-          fontWeight: "300"
-        }}>
+      <div style={{ textAlign: "center" }}>
+        <h1 style={{ fontSize: "42px", fontWeight: "300" }}>
           Accès Privé aux Diamants d’Investissement 💎
         </h1>
 
-        <p style={{
-          marginTop: "10px",
-          color: "#aaa",
-          fontSize: "14px",
-          letterSpacing: "1px"
-        }}>
-          Sélection confidentielle réservée à une clientèle exigeante
+        <p style={{ color: "#aaa", marginTop: "10px" }}>
+          Réservé à une clientèle sélectionnée
         </p>
 
-        {/* LOTUS */}
-        <p style={{
-          marginTop: "20px",
-          fontSize: "14px",
-          color: "#bbb",
-          maxWidth: "600px",
-          marginLeft: "auto",
-          marginRight: "auto"
-        }}>
-          Accès à une sélection incluant des diamants Lotus à 105 facettes,
-          pièces rares réservées à une clientèle privée.
+        <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "600px", marginInline: "auto" }}>
+          Accès à des diamants Lotus à 105 facettes, exclusivité mondiale,
+          ainsi qu’à des pièces d’investissement introuvables sur le marché public.
         </p>
       </div>
 
-      {/* FORM CARD */}
+      {/* FORM */}
       <div style={{
-        background: "rgba(255,255,255,0.95)",
+        background: "white",
         color: "black",
         padding: "50px",
         maxWidth: "520px",
         margin: "80px auto",
-        borderRadius: "16px",
-        boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
-        animation: "fadeInUp 1s ease"
+        borderRadius: "16px"
       }}>
 
         {step === 1 && (
@@ -122,8 +98,13 @@ export default function Home() {
               100k+
             </button>
 
-            <button style={buttonStyle} onClick={() => { setForm({ ...form, budget: '1M+' }); next(); }}>
-              1M+
+            <button style={{
+              ...buttonStyle,
+              background: "black",
+              color: "white"
+            }}
+              onClick={() => { setForm({ ...form, budget: '1M+' }); next(); }}>
+              1M+ (Accès Privé)
             </button>
           </>
         )}
@@ -142,33 +123,17 @@ export default function Home() {
           <>
             <h2>Accès confidentiel</h2>
 
-            <input
-              placeholder="Nom"
-              style={{ width: "100%", padding: "12px", marginTop: "10px" }}
-              onChange={e => setForm({ ...form, name: e.target.value })}
-            />
+            <input placeholder="Nom" style={{ width: "100%", padding: "12px", marginTop: "10px" }}
+              onChange={e => setForm({ ...form, name: e.target.value })} />
 
-            <input
-              placeholder="Email"
-              style={{ width: "100%", padding: "12px", marginTop: "10px" }}
-              onChange={e => setForm({ ...form, email: e.target.value })}
-            />
+            <input placeholder="Email" style={{ width: "100%", padding: "12px", marginTop: "10px" }}
+              onChange={e => setForm({ ...form, email: e.target.value })} />
 
-            <input
-              placeholder="Téléphone"
-              style={{ width: "100%", padding: "12px", marginTop: "10px" }}
-              onChange={e => setForm({ ...form, phone: e.target.value })}
-            />
+            <input placeholder="Téléphone" style={{ width: "100%", padding: "12px", marginTop: "10px" }}
+              onChange={e => setForm({ ...form, phone: e.target.value })} />
 
-            <button
-              style={{
-                ...buttonStyle,
-                marginTop: "20px",
-                background: "black",
-                color: "white"
-              }}
-              onClick={submit}
-            >
+            <button style={{ ...buttonStyle, marginTop: "20px", background: "black", color: "white" }}
+              onClick={submit}>
               Demander un accès
             </button>
           </>
@@ -176,62 +141,75 @@ export default function Home() {
 
         {step === 5 && (
           <div style={{ textAlign: "center" }}>
-            <h2>Demande reçue</h2>
-            <p style={{ marginTop: "10px" }}>
-              Un expert vous recontacte sous 24h
-            </p>
+            <h2>Analyse en cours</h2>
 
-            <a
-              href="https://wa.me/33782061181?text=Bonjour%20je%20souhaite%20investir"
-              style={{
-                display: "block",
-                marginTop: "25px",
-                padding: "15px",
-                background: "black",
-                color: "white",
-                textDecoration: "none"
-              }}
-            >
-              Contact immédiat
-            </a>
+            {form.budget === '1M+' ? (
+              <>
+                <p style={{ marginTop: "10px" }}>
+                  Vous êtes éligible à un accès prioritaire à nos pièces les plus rares.
+                </p>
+
+                <p style={{ marginTop: "10px", fontSize: "13px", color: "#666" }}>
+                  Certaines opportunités ne sont présentées qu’à un cercle restreint d’investisseurs.
+                </p>
+
+                <a href="https://wa.me/33782061181?text=Client%201M%20VIP"
+                  style={{
+                    display: "block",
+                    marginTop: "20px",
+                    padding: "15px",
+                    background: "black",
+                    color: "white",
+                    textDecoration: "none"
+                  }}>
+                  Accès direct expert senior
+                </a>
+              </>
+            ) : (
+              <>
+                <p style={{ marginTop: "10px" }}>
+                  Un expert vous contacte sous 24h
+                </p>
+
+                <a href="https://wa.me/33782061181?text=Demande%20standard"
+                  style={{
+                    display: "block",
+                    marginTop: "20px",
+                    padding: "15px",
+                    background: "black",
+                    color: "white",
+                    textDecoration: "none"
+                  }}>
+                  Contact WhatsApp
+                </a>
+              </>
+            )}
           </div>
         )}
 
       </div>
 
-      {/* STORYTELLING */}
+      {/* STORY + PRÉ-CLOSING */}
       <div style={{
-        marginTop: "60px",
         textAlign: "center",
-        fontSize: "14px",
         color: "#aaa",
         maxWidth: "700px",
-        marginLeft: "auto",
-        marginRight: "auto",
+        margin: "auto",
         lineHeight: "1.6"
       }}>
         <p>Les diamants d’investissement ne sont pas accessibles au grand public.</p>
-        <p>Chaque pierre est sélectionnée selon des critères stricts : pureté, rareté et liquidité internationale.</p>
-        <p>Notre réseau permet un accès privilégié à des opportunités réservées aux professionnels du marché.</p>
+        <p>Chaque pierre est sélectionnée selon des critères stricts de pureté, de rareté et de liquidité internationale.</p>
+        <p>Nous disposons d’un accès privilégié à un réseau international permettant de sourcer des pièces introuvables sur le marché traditionnel.</p>
+
+        <p style={{ marginTop: "20px" }}>
+          Parmi ces opportunités, certaines pièces Lotus à 105 facettes constituent une exclusivité mondiale,
+          réservée à un cercle restreint d’investisseurs.
+        </p>
+
+        <p style={{ marginTop: "20px", fontStyle: "italic" }}>
+          Ces pièces ne sont présentées que lorsque le profil investisseur correspond aux critères requis.
+        </p>
       </div>
-
-      {/* ANIMATIONS */}
-      <style>{`
-        @keyframes fadeIn {
-          to { opacity: 1; }
-        }
-
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
 
     </main>
   );
