@@ -29,19 +29,20 @@ export default function LotusPage() {
         </p>
       </div>
 
-      {/* IMAGE PREMIUM */}
+      {/* IMAGE LOTUS PREMIUM */}
       <div style={{
-        marginTop: "50px",
+        marginTop: "60px",
         textAlign: "center"
       }}>
         <img 
-          src="https://images.unsplash.com/photo-1611143669185-af224c5e3252"
-          alt="Diamant luxe"
+          src="/lotus.jpg"
+          alt="Lotus exclusif"
           style={{
             width: "100%",
-            maxWidth: "500px",
-            borderRadius: "12px",
-            boxShadow: "0 20px 60px rgba(0,0,0,0.6)"
+            maxWidth: "520px",
+            borderRadius: "16px",
+            boxShadow: "0 30px 100px rgba(0,0,0,0.8)",
+            filter: "brightness(0.95) contrast(1.05)",
           }}
         />
       </div>
@@ -51,7 +52,7 @@ export default function LotusPage() {
         width: "60px",
         height: "1px",
         background: "#444",
-        margin: "50px auto"
+        margin: "60px auto"
       }} />
 
       {/* STORY */}
@@ -67,7 +68,8 @@ export default function LotusPage() {
         </p>
 
         <p>
-          Sa taille unique amplifie la réflexion de la lumière et crée une profondeur visuelle exceptionnelle.
+          Inspiré par la pureté et la symétrie naturelle du lotus, ce type de taille amplifie la réflexion de la lumière
+          et crée une profondeur visuelle exceptionnelle.
         </p>
 
         <p>
