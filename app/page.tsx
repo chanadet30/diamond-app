@@ -30,41 +30,63 @@ export default function Home() {
     width: "100%",
     padding: "16px",
     marginTop: "15px",
-    border: "1px solid #222",
+    border: "1px solid #333",
     background: "white",
     cursor: "pointer",
-    fontSize: "16px"
+    fontSize: "15px",
+    letterSpacing: "1px",
+    transition: "all 0.3s ease"
   };
 
   return (
     <main style={{
-      background: "black",
+      background: "linear-gradient(180deg, #000000, #0d0d0d)",
       color: "white",
       minHeight: "100vh",
-      padding: "60px",
-      fontFamily: "serif"
+      padding: "80px 20px",
+      fontFamily: "Georgia, serif"
     }}>
 
-      <h1 style={{
-        textAlign: "center",
-        fontSize: "36px",
-        marginBottom: "40px"
-      }}>
-        Accès Privé aux Diamants d’Investissement Certifiés 💎
-      </h1>
-
+      {/* HEADER */}
       <div style={{
-        background: "white",
+        textAlign: "center",
+        opacity: 0,
+        animation: "fadeIn 1.2s ease forwards"
+      }}>
+        <h1 style={{
+          fontSize: "42px",
+          letterSpacing: "2px",
+          fontWeight: "300"
+        }}>
+          Accès Privé aux Diamants d’Investissement 💎
+        </h1>
+
+        <p style={{
+          marginTop: "10px",
+          color: "#aaa",
+          fontSize: "14px",
+          letterSpacing: "1px"
+        }}>
+          Sélection confidentielle réservée à une clientèle exigeante
+        </p>
+      </div>
+
+      {/* CARD */}
+      <div style={{
+        background: "rgba(255,255,255,0.95)",
         color: "black",
-        padding: "40px",
-        maxWidth: "500px",
-        margin: "0 auto",
-        borderRadius: "10px"
+        padding: "50px",
+        maxWidth: "520px",
+        margin: "80px auto",
+        borderRadius: "16px",
+        boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+        backdropFilter: "blur(10px)",
+        animation: "fadeInUp 1s ease"
       }}>
 
         {step === 1 && (
           <>
-            <h2>Objectif</h2>
+            <h2>Votre objectif</h2>
             <button style={buttonStyle}
               onClick={() => { setForm({ ...form, objective: 'investissement' }); next(); }}>
               Investissement
@@ -74,25 +96,21 @@ export default function Home() {
 
         {step === 2 && (
           <>
-            <h2>Budget</h2>
+            <h2>Montant envisagé</h2>
 
-            <button style={buttonStyle}
-              onClick={() => { setForm({ ...form, budget: '<50k' }); next(); }}>
+            <button style={buttonStyle} onClick={() => { setForm({ ...form, budget: '<50k' }); next(); }}>
               Moins de 50k€
             </button>
 
-            <button style={buttonStyle}
-              onClick={() => { setForm({ ...form, budget: '50k+' }); next(); }}>
+            <button style={buttonStyle} onClick={() => { setForm({ ...form, budget: '50k+' }); next(); }}>
               50k+
             </button>
 
-            <button style={buttonStyle}
-              onClick={() => { setForm({ ...form, budget: '100k+' }); next(); }}>
+            <button style={buttonStyle} onClick={() => { setForm({ ...form, budget: '100k+' }); next(); }}>
               100k+
             </button>
 
-            <button style={buttonStyle}
-              onClick={() => { setForm({ ...form, budget: '1M+' }); next(); }}>
+            <button style={buttonStyle} onClick={() => { setForm({ ...form, budget: '1M+' }); next(); }}>
               1M+
             </button>
           </>
@@ -110,58 +128,82 @@ export default function Home() {
 
         {step === 4 && (
           <>
-            <h2>Contact</h2>
+            <h2>Accès confidentiel</h2>
 
             <input
               placeholder="Nom"
-              style={{ width: "100%", padding: "10px", marginTop: "10px" }}
+              style={{ width: "100%", padding: "12px", marginTop: "10px" }}
               onChange={e => setForm({ ...form, name: e.target.value })}
             />
 
             <input
               placeholder="Email"
-              style={{ width: "100%", padding: "10px", marginTop: "10px" }}
+              style={{ width: "100%", padding: "12px", marginTop: "10px" }}
               onChange={e => setForm({ ...form, email: e.target.value })}
             />
 
             <input
               placeholder="Téléphone"
-              style={{ width: "100%", padding: "10px", marginTop: "10px" }}
+              style={{ width: "100%", padding: "12px", marginTop: "10px" }}
               onChange={e => setForm({ ...form, phone: e.target.value })}
             />
 
             <button
-              style={{ ...buttonStyle, marginTop: "20px" }}
+              style={{
+                ...buttonStyle,
+                marginTop: "20px",
+                background: "black",
+                color: "white"
+              }}
               onClick={submit}
             >
-              Accéder
+              Demander un accès
             </button>
           </>
         )}
 
         {step === 5 && (
-          <div>
-            <h2>Votre accès est en cours de validation</h2>
-            <p>Un expert vous contacte sous 24h</p>
+          <div style={{ textAlign: "center" }}>
+            <h2>Demande reçue</h2>
+            <p style={{ marginTop: "10px" }}>
+              Un expert vous recontacte sous 24h
+            </p>
 
             <a
-              href="https://wa.me/33782061181?text=Bonjour%20je%20souhaite%20investir%20dans%20un%20diamant%20certifié"
+              href="https://wa.me/33782061181?text=Bonjour%20je%20souhaite%20investir"
               style={{
                 display: "block",
-                marginTop: "20px",
+                marginTop: "25px",
                 padding: "15px",
                 background: "black",
                 color: "white",
-                textAlign: "center",
                 textDecoration: "none"
               }}
             >
-              Contacter immédiatement
+              Contact immédiat
             </a>
           </div>
         )}
 
       </div>
+
+      {/* ANIMATIONS */}
+      <style>{`
+        @keyframes fadeIn {
+          to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
 
     </main>
   );
