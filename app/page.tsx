@@ -95,8 +95,8 @@ export default function Home() {
     <button 
       onClick={()=>{setForm({...form, budget:'<50k'}); next();}}
       style={buttonStyle}
-      onMouseOver={e => e.target.style.background = "black"}
-      onMouseOut={e => e.target.style.background = "white"}
+      onMouseOver={e => (e.target as HTMLButtonElement).style.background = "black"}
+onMouseOut={e => (e.target as HTMLButtonElement).style.background = "white"}
     >
       Moins de 50k€
     </button>
@@ -104,8 +104,8 @@ export default function Home() {
     <button 
       onClick={()=>{setForm({...form, budget:'50k+'}); next();}}
       style={buttonStyle}
-      onMouseOver={e => e.target.style.background = "black"}
-      onMouseOut={e => e.target.style.background = "white"}
+      onMouseOver={e => (e.target as HTMLButtonElement).style.background = "black"}
+onMouseOut={e => (e.target as HTMLButtonElement).style.background = "white"}}
     >
       50k+
     </button>
@@ -113,8 +113,8 @@ export default function Home() {
     <button 
       onClick={()=>{setForm({...form, budget:'100k+'}); next();}}
       style={buttonStyle}
-      onMouseOver={e => e.target.style.background = "black"}
-      onMouseOut={e => e.target.style.background = "white"}
+      onMouseOver={e => (e.target as HTMLButtonElement).style.background = "black"}
+onMouseOut={e => (e.target as HTMLButtonElement).style.background = "white"}
     >
       100k+
     </button>
@@ -122,8 +122,8 @@ export default function Home() {
     <button 
       onClick={()=>{setForm({...form, budget:'1M+'}); next();}}
       style={buttonStyle}
-      onMouseOver={e => e.target.style.background = "black"}
-      onMouseOut={e => e.target.style.background = "white"}
+      onMouseOver={e => (e.target as HTMLButtonElement).style.background = "black"}
+onMouseOut={e => (e.target as HTMLButtonElement).style.background = "white"}
     >
       1M+
     </button>
@@ -136,8 +136,8 @@ export default function Home() {
             <button 
               onClick={()=>{setForm({...form, timeline:'immédiat'}); next();}}
               style={buttonStyle}
-              onMouseOver={e => e.target.style.background = "black"}
-              onMouseOut={e => e.target.style.background = "white"}
+              onMouseOver={e => (e.target as HTMLButtonElement).style.background = "black"}
+onMouseOut={e => (e.target as HTMLButtonElement).style.background = "white"}
             >
               Immédiat
             </button>
@@ -169,8 +169,8 @@ export default function Home() {
             <button 
               onClick={submit}
               style={{...buttonStyle, marginTop:"20px"}}
-              onMouseOver={e => e.target.style.background = "black"}
-              onMouseOut={e => e.target.style.background = "white"}
+              onMouseOver={e => (e.target as HTMLButtonElement).style.background = "black"}
+onMouseOut={e => (e.target as HTMLButtonElement).style.background = "white"}
             >
               Accéder
             </button>
