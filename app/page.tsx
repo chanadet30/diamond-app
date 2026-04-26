@@ -46,7 +46,6 @@ export default function Home() {
           avec un positionnement systématiquement inférieur aux références Rapaport.
         </p>
 
-        {/* 💥 POINT FORT */}
         <p style={{
           marginTop:"20px",
           fontSize:"14px",
@@ -78,7 +77,7 @@ export default function Home() {
 
         {step === 1 && (
           <>
-            <h2>Entrons en contact</h2>
+            <h2>Entrons en contact (sous 24h)</h2>
 
             <button style={buttonStyle} onClick={() => setStep(2)}>
               Consultation gratuite
