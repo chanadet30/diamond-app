@@ -30,11 +30,11 @@ export default function Home() {
       {/* HEADER */}
       <div style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "42px", fontWeight: "300" }}>
-          Chasseur International de Diamants d’Investissement 💎
+          Chasseur International de Diamants 💎
         </h1>
 
         <p style={{ fontSize:"12px", color:"#777", marginTop:"10px" }}>
-          Acquisition patrimoniale • Diversification • Transmission • Événements exceptionnels
+          Acquisition patrimoniale • Diversification • Mariage • Fiançailles • Transmission • Donation • Succession
         </p>
 
         <p style={{ color: "#aaa", marginTop: "15px" }}>
@@ -42,12 +42,22 @@ export default function Home() {
         </p>
 
         <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "600px", marginInline: "auto" }}>
-          Recherche et sélection de diamants d’investissement aux meilleures conditions du marché,
+          Recherche et négociation de diamants aux meilleures conditions du marché,
           avec un positionnement systématiquement inférieur aux références Rapaport.
         </p>
 
+        {/* 💥 POINT FORT */}
         <p style={{
           marginTop:"20px",
+          fontSize:"14px",
+          color:"#fff",
+          fontWeight:"500"
+        }}>
+          Garantie d’obtenir le prix le plus bas du marché à qualité équivalente
+        </p>
+
+        <p style={{
+          marginTop:"15px",
           fontSize:"12px",
           color:"#777"
         }}>
@@ -122,7 +132,7 @@ export default function Home() {
               marginTop:"10px",
               textAlign:"center"
             }}>
-              Échange confidentiel et sans engagement
+              Échange confidentiel • sans engagement • accompagnement personnalisé
             </p>
           </>
         )}
@@ -132,7 +142,7 @@ export default function Home() {
             <h2>Prise de contact confirmée</h2>
 
             <p style={{ marginTop: "10px", fontSize:"13px", color:"#666" }}>
-              Vous serez recontacté pour une consultation personnalisée.
+              Une consultation vous sera proposée afin d’identifier les meilleures opportunités selon votre objectif.
             </p>
           </div>
         )}
@@ -148,7 +158,7 @@ export default function Home() {
         lineHeight: "1.6"
       }}>
         <p>
-          Le marché du diamant d’investissement est complexe et rarement accessible dans des conditions optimales.
+          Le marché du diamant est fragmenté, opaque et souvent inaccessible dans des conditions optimales.
         </p>
 
         <p>
@@ -157,8 +167,8 @@ export default function Home() {
         </p>
 
         <p style={{ marginTop: "20px" }}>
-          Chaque recherche est réalisée avec un objectif précis :
-          obtenir la meilleure pierre au meilleur prix, en toute transparence.
+          L’objectif reste constant :
+          accéder à la meilleure pierre, au meilleur prix, en toute transparence.
         </p>
       </div>
 
