@@ -30,20 +30,20 @@ export default function Home() {
       {/* HEADER */}
       <div style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "42px", fontWeight: "300" }}>
-          Accès Privé aux Diamants d’Investissement 💎
+          Chasseur International de Diamants d’Investissement 💎
         </h1>
 
         <p style={{ fontSize:"12px", color:"#777", marginTop:"10px" }}>
-          Investisseurs privés • Dirigeants • Family offices
+          Acquisition patrimoniale • Diversification • Transmission • Événements exceptionnels
         </p>
 
-        <p style={{ color: "#aaa", marginTop: "10px" }}>
-          Réservé à une clientèle sélectionnée
+        <p style={{ color: "#aaa", marginTop: "15px" }}>
+          Accès direct au marché international du diamant, sans intermédiaire.
         </p>
 
         <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "600px", marginInline: "auto" }}>
-          Accès à des diamants Lotus à 105 facettes, exclusivité mondiale,
-          ainsi qu’à des pièces d’investissement introuvables sur le marché public.
+          Recherche et sélection de diamants d’investissement aux meilleures conditions du marché,
+          avec un positionnement systématiquement inférieur aux références Rapaport.
         </p>
 
         <p style={{
@@ -51,7 +51,7 @@ export default function Home() {
           fontSize:"12px",
           color:"#777"
         }}>
-          Pierres certifiées GIA / HRD – réseau international – sélection professionnelle
+          Diamants certifiés GIA / HRD – sélection rigoureuse – accompagnement confidentiel
         </p>
       </div>
 
@@ -68,10 +68,10 @@ export default function Home() {
 
         {step === 1 && (
           <>
-            <h2>Votre objectif</h2>
+            <h2>Entrons en contact</h2>
 
             <button style={buttonStyle} onClick={() => setStep(2)}>
-              Investissement
+              Consultation gratuite
             </button>
           </>
         )}
@@ -96,24 +96,14 @@ export default function Home() {
               style={{ ...buttonStyle, background: "black", color: "white" }}
               onClick={() => {setBudget('1M+'); setStep(3);}}
             >
-              1M+ (Accès Privé)
+              1M+
             </button>
           </>
         )}
 
         {step === 3 && (
           <>
-            <h2>Délai</h2>
-
-            <button style={buttonStyle} onClick={() => setStep(4)}>
-              Immédiat
-            </button>
-          </>
-        )}
-
-        {step === 4 && (
-          <>
-            <h2>Accès confidentiel</h2>
+            <h2>Coordonnées</h2>
 
             <input placeholder="Nom" style={{ width: "100%", padding: "12px", marginTop: "10px" }} />
             <input placeholder="Email" style={{ width: "100%", padding: "12px", marginTop: "10px" }} />
@@ -121,9 +111,9 @@ export default function Home() {
 
             <button
               style={{ ...buttonStyle, marginTop: "20px", background: "black", color: "white" }}
-              onClick={() => setStep(5)}
+              onClick={() => setStep(4)}
             >
-              Demander un accès
+              Être recontacté
             </button>
 
             <p style={{
@@ -132,67 +122,18 @@ export default function Home() {
               marginTop:"10px",
               textAlign:"center"
             }}>
-              Nombre de demandes limité chaque semaine
+              Échange confidentiel et sans engagement
             </p>
           </>
         )}
 
-        {step === 5 && (
+        {step === 4 && (
           <div style={{ textAlign: "center" }}>
-            <h2>Validation du profil en cours</h2>
+            <h2>Prise de contact confirmée</h2>
 
             <p style={{ marginTop: "10px", fontSize:"13px", color:"#666" }}>
-              Vous serez contacté uniquement si votre profil correspond aux critères d’accès.
+              Vous serez recontacté pour une consultation personnalisée.
             </p>
-
-            {budget === '1M+' ? (
-              <>
-                <p style={{ marginTop: "10px" }}>
-                  Accès prioritaire aux pièces les plus rares.
-                </p>
-
-                <a href="https://wa.me/33782061181?text=Client%201M%20VIP"
-                  style={{
-                    display: "block",
-                    marginTop: "20px",
-                    padding: "15px",
-                    background: "black",
-                    color: "white",
-                    textDecoration: "none"
-                  }}>
-                  Accès direct expert senior
-                </a>
-              </>
-            ) : (
-              <>
-                <p style={{ marginTop: "10px" }}>
-                  Un expert vous contacte sous 24h
-                </p>
-
-                <a href="https://wa.me/33782061181?text=Demande%20standard"
-                  style={{
-                    display: "block",
-                    marginTop: "20px",
-                    padding: "15px",
-                    background: "black",
-                    color: "white",
-                    textDecoration: "none"
-                  }}>
-                  Contact WhatsApp
-                </a>
-              </>
-            )}
-
-            {/* ACCÈS LOTUS */}
-            <a href="/lotus" style={{
-              display:"block",
-              marginTop:"20px",
-              fontSize:"13px",
-              color:"#888"
-            }}>
-              Voir une pièce exceptionnelle
-            </a>
-
           </div>
         )}
 
@@ -206,13 +147,18 @@ export default function Home() {
         margin: "auto",
         lineHeight: "1.6"
       }}>
-        <p>Les diamants d’investissement ne sont pas accessibles au grand public.</p>
-        <p>Chaque pierre est sélectionnée selon des critères stricts de pureté, de rareté et de liquidité internationale.</p>
-        <p>Nous disposons d’un accès privilégié à un réseau international permettant de sourcer des pièces introuvables sur le marché traditionnel.</p>
+        <p>
+          Le marché du diamant d’investissement est complexe et rarement accessible dans des conditions optimales.
+        </p>
+
+        <p>
+          L’approche consiste à identifier, négocier et sécuriser des pierres répondant à des critères stricts
+          de qualité, de certification et de liquidité internationale.
+        </p>
 
         <p style={{ marginTop: "20px" }}>
-          Certaines pièces Lotus à 105 facettes constituent une exclusivité mondiale,
-          réservée à un cercle restreint d’investisseurs.
+          Chaque recherche est réalisée avec un objectif précis :
+          obtenir la meilleure pierre au meilleur prix, en toute transparence.
         </p>
       </div>
 
