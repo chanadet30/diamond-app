@@ -171,6 +171,32 @@ export default function Home() {
         </p>
       </div>
 
+      {/* 💥 NOUVELLE SECTION */}
+      <div style={{
+        textAlign: "center",
+        marginTop: "80px"
+      }}>
+        <p style={{
+          fontSize: "14px",
+          color: "#ccc",
+          marginBottom: "20px"
+        }}>
+          Ce que 95% des gens ignorent sur le diamant
+        </p>
+
+        <a href="/guide"
+          style={{
+            display: "inline-block",
+            padding: "16px 30px",
+            background: "white",
+            color: "black",
+            textDecoration: "none",
+            letterSpacing: "1px"
+          }}>
+          Cliquez ici
+        </a>
+      </div>
+
     </main>
   );
 }
