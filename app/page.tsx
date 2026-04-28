@@ -30,7 +30,7 @@ export default function Home() {
       {/* HEADER */}
       <div style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "42px", fontWeight: "300" }}>
-          Chasseur International de Diamants 💎
+          Votre Chasseur International de Diamants 💎
         </h1>
 
         <p style={{ fontSize:"12px", color:"#777", marginTop:"10px" }}>
