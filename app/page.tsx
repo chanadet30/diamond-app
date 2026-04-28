@@ -30,7 +30,7 @@ export default function Home() {
       {/* HEADER */}
       <div style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "42px", fontWeight: "300" }}>
-          Votre Chasseur International de Diamants 💎
+          Chasseur International de Diamants 💎
         </h1>
 
         <p style={{ fontSize:"12px", color:"#777", marginTop:"10px" }}>
@@ -38,12 +38,17 @@ export default function Home() {
         </p>
 
         <p style={{ color: "#aaa", marginTop: "15px" }}>
-          Accès direct au marché international du diamant.
+          Accès direct au marché international du diamant, sans intermédiaire.
         </p>
 
-        <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "600px", marginInline: "auto" }}>
-          Recherche et négociation de diamants aux meilleures conditions du marché,
-          avec un positionnement systématiquement inférieur aux références Rapaport.
+        <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "650px", marginInline: "auto" }}>
+          Contrairement à un vendeur, dont l’objectif est de céder une pierre au meilleur prix pour lui,
+          l’approche consiste ici à agir exclusivement du côté de l’acquéreur.
+        </p>
+
+        <p style={{ marginTop: "15px", color: "#bbb", maxWidth: "650px", marginInline: "auto" }}>
+          Le rôle est de rechercher, analyser et négocier sur le marché international afin d’identifier
+          la pierre correspondant précisément à un objectif donné, dans les meilleures conditions possibles.
         </p>
 
         <p style={{
@@ -52,7 +57,15 @@ export default function Home() {
           color:"#fff",
           fontWeight:"500"
         }}>
-          Garantie d’obtenir le prix le plus bas du marché à qualité équivalente
+          Garantie d’obtenir le meilleur prix du marché à qualité équivalente
+        </p>
+
+        <p style={{
+          marginTop:"10px",
+          fontSize:"13px",
+          color:"#ccc"
+        }}>
+          Honoraires transparents : 3% uniquement, sans marge cachée
         </p>
 
         <p style={{
@@ -157,21 +170,21 @@ export default function Home() {
         lineHeight: "1.6"
       }}>
         <p>
-          Le marché du diamant est fragmenté, opaque et souvent inaccessible dans des conditions optimales.
+          Le marché du diamant est fragmenté, opaque et souvent difficile d’accès dans des conditions optimales.
         </p>
 
         <p>
-          L’approche consiste à identifier, négocier et sécuriser des pierres répondant à des critères stricts
-          de qualité, de certification et de liquidité internationale.
+          L’approche consiste à se positionner du côté de l’acquéreur afin d’aligner les intérêts,
+          sécuriser la qualité et optimiser le prix d’entrée.
         </p>
 
         <p style={{ marginTop: "20px" }}>
           L’objectif reste constant :
-          accéder à la meilleure pierre, au meilleur prix, en toute transparence.
+          accéder à la bonne pierre, au bon prix, en toute transparence.
         </p>
       </div>
 
-      {/* 💥 NOUVELLE SECTION */}
+      {/* GUIDE CTA */}
       <div style={{
         textAlign: "center",
         marginTop: "80px"
