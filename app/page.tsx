@@ -38,7 +38,7 @@ export default function Home() {
         </p>
 
         <p style={{ color: "#aaa", marginTop: "15px" }}>
-          Accès direct au marché international du diamant, sans intermédiaire.
+          Accès direct au marché international du diamant.
         </p>
 
         <p style={{ marginTop: "20px", color: "#bbb", maxWidth: "600px", marginInline: "auto" }}>
