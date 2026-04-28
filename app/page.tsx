@@ -57,7 +57,7 @@ export default function Home() {
           color:"#fff",
           fontWeight:"500"
         }}>
-          Garantie d’obtenir le meilleur prix du marché à qualité équivalente
+          Garantie d’obtenir le meilleur prix du marché à qualité équivalente sous une semaine
         </p>
 
         <p style={{
